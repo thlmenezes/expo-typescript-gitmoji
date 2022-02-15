@@ -6,8 +6,9 @@ module.exports = function (api) {
       [
         "module-resolver",
         {
+          extensions: [".ts", ".tsx", ".jsx", ".js", ".json", ".svg", ".jpg"],
           alias: {
-            "~": "./src",
+            "@routes": "./src/routes",
           },
         },
       ],
