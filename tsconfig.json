@@ -5,7 +5,9 @@
     "baseUrl": ".",
     "rootDir": ".",
     "paths": {
-      "@routes": ["./src/routes"],
+      "@root/*": [
+        "./src/*"
+      ],
     },
   }
 }

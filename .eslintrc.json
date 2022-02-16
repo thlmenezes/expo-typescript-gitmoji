@@ -34,7 +34,7 @@
                 "groups": [
                     "module",
                     [
-                        "/^@routes/"
+                        "/^@root/"
                     ],
                     [
                         "parent",
