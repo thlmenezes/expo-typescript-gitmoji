@@ -1,15 +1,18 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { Text, View } from "react-native";
 
-import { styles } from "./styles";
+import { icons } from "@root/assets";
+import { Title, RoundImage } from "@root/atomic/atoms";
+import { Card } from "@root/atomic/molecules";
+
+import { Container, Text } from "./styles";
 
 export const Home = () => {
   return (
-    <View style={styles.container}>
-      <Text>home</Text>
-      <Text>Open up App.tsx start working on your app!</Text>
+    <Container>
+      <Card image={icons.icon} title="Home" />
+      <Text>Change Default Device Color to See Magic</Text>
       <StatusBar style="auto" />
-    </View>
+    </Container>
   );
 };
