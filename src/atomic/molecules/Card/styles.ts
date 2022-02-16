@@ -10,16 +10,17 @@ export const Container = styled.View.attrs({
   },
   shadowRadius: 10,
   shadowOpacity: 0.1,
-  backgroundColor: "white",
 })`
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
   border-radius: 8px;
+  background-color: ${({ theme }) => theme.title};
 `;
 
 export const CardTitle = styled(Title)`
   flex: 1;
   margin-left: 10px;
+  color: ${({ theme }) => theme.background};
 `;
