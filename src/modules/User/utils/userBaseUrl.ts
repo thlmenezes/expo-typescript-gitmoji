@@ -1,3 +1,3 @@
 export const userBase = () => {
-  return "/posts";
+  return "/users";
 };
