@@ -3,9 +3,8 @@ import React from "react";
 import { TouchableOpacity } from "react-native";
 
 import { icons } from "@root/assets";
-import { Title, RoundImage } from "@root/atomic/atoms";
 import { Card } from "@root/atomic/molecules";
-import { HomeProps } from "@root/routes";
+import type { HomeProps } from "@root/modules/Home";
 
 import { Container, Text } from "./styles";
 

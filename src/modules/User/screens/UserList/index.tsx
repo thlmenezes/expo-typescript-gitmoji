@@ -5,7 +5,7 @@ import { TouchableOpacity } from "react-native";
 import { icons } from "@root/assets";
 import { Title, RoundImage } from "@root/atomic/atoms";
 import { Card } from "@root/atomic/molecules";
-import { UserProps } from "@root/routes";
+import type { UserProps } from "@root/modules/User";
 
 import { Container, Text } from "./styles";
 
