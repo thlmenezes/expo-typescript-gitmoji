@@ -12,7 +12,7 @@ export const MainStack = () => {
         headerShown: false,
       }}
     >
-      <Screen name="Home" component={Home} />
+      <Screen name="HomePage" component={Home} />
     </Navigator>
   );
 };
