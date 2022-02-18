@@ -1,9 +1,9 @@
 import { useQuery } from "react-query";
 
-import { getUserListAsync } from "../services";
+import { getUserListAsync, User } from "../services";
 
 export const useUsers = () => {
-  const { data, isLoading } = useQuery("users", async () => {
+  const { data, isLoading } = useQuery<User[] | undefined>("users", async () => {
     const { data } = await getUserListAsync();
     return data;
   });
