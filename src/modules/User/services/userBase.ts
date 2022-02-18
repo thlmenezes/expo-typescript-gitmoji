@@ -6,14 +6,14 @@ interface UserAsyncProps {
   id: number;
 }
 
-interface User {
+export type User = {
   id: number;
   name: string;
   email: string;
-}
+};
 
 export async function getUserListAsync() {
-  const response = await handlerApiAsync<User>({ execute: () => api.get(`${userBase()}`) });
+  const response = await handlerApiAsync<User[]>({ execute: () => api.get(`${userBase()}`) });
   return response;
 }
 
