@@ -3,11 +3,10 @@ import React from "react";
 import { TouchableOpacity } from "react-native";
 
 import { icons } from "@root/assets";
-import { Title, RoundImage } from "@root/atomic/atoms";
 import { Card } from "@root/atomic/molecules";
 import type { UserProps } from "@root/modules/User";
 
-import { Container, Text } from "./styles";
+import { Container } from "./styles";
 
 export const UserList = ({ navigation }: UserProps) => {
   function handlePress() {
