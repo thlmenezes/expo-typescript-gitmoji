@@ -5,7 +5,7 @@ export const Container = styled.View`
   justify-content: center;
   flex: 1;
   background: ${({ theme }) => theme.background};
-  padding: 0 10%;
+  padding: 30% 10% 0 10%;
 `;
 
 export const Text = styled.Text`
