@@ -4,9 +4,9 @@ interface Props {
   execute: () => Promise<AxiosResponse>;
 }
 
-export const handlerApiAsync = async ({ execute }: Props) => {
+export async function handlerApiAsync<DataType>({ execute }: Props) {
   try {
-    const { data } = await execute();
+    const { data }: { data: DataType } = await execute();
     return {
       success: true,
       data,
@@ -17,4 +17,4 @@ export const handlerApiAsync = async ({ execute }: Props) => {
       error,
     };
   }
-};
+}
