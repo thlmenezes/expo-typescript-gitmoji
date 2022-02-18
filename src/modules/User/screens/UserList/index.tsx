@@ -1,10 +1,10 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { TouchableOpacity } from "react-native";
+import { ScrollView, Text, TouchableOpacity } from "react-native";
 
-import { icons } from "@root/assets";
 import { Card } from "@root/atomic/molecules";
 import type { UserProps } from "@root/modules/User";
+import { useUsers, mockedAvatarUrl } from "@root/modules/User";
 
 import { Container } from "./styles";
 
@@ -13,11 +13,25 @@ export const UserList = ({ navigation }: UserProps) => {
     navigation.navigate("Home");
   }
 
+  const { users, isLoading } = useUsers();
+
+  if (isLoading) {
+    return (
+      <Container>
+        <Text>Loading...</Text>
+      </Container>
+    );
+  }
+
   return (
     <Container>
-      <TouchableOpacity onPress={handlePress}>
-        <Card image={icons.icon} title="UserList" />
-      </TouchableOpacity>
+      <ScrollView>
+        {users?.map(({ name, id }) => (
+          <TouchableOpacity key={id} onPress={handlePress}>
+            <Card image={{ uri: mockedAvatarUrl(name) }} title={name} />
+          </TouchableOpacity>
+        ))}
+      </ScrollView>
       <StatusBar style="auto" />
     </Container>
   );

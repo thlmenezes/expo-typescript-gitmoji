@@ -7,11 +7,7 @@ const { Navigator, Screen } = createNativeStackNavigator();
 
 export const MainStack = () => {
   return (
-    <Navigator
-      screenOptions={{
-        headerShown: false,
-      }}
-    >
+    <Navigator>
       <Screen name="UserList" component={UserList} />
     </Navigator>
   );
