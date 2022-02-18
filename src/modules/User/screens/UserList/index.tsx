@@ -4,8 +4,9 @@ import { ScrollView, Text, TouchableOpacity } from "react-native";
 
 import { Card } from "@root/atomic/molecules";
 import type { UserProps } from "@root/modules/User";
-import { useUsers, mockedAvatarUrl } from "@root/modules/User";
 
+import { useUsers } from "../../hooks";
+import { mockedAvatarUrl } from "../../utils";
 import { Container } from "./styles";
 
 export const UserList = ({ navigation }: UserProps) => {
