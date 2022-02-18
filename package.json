@@ -9,9 +9,7 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "commit": "cz",
-    "lint": "eslint . --fix --ext ts,js,tsx,jsx",
-    "storybook": "start-storybook -p 7007",
-    "build-storybook": "build-storybook"
+    "lint": "eslint . --fix --ext ts,js,tsx,jsx"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.8",
@@ -42,7 +40,6 @@
     "@storybook/addon-ondevice-actions": "^5.3.23",
     "@storybook/addon-ondevice-knobs": "^5.3.25",
     "@storybook/react-native": "^5.3.25",
-    "@storybook/react-native-server": "^5.3.23",
     "@types/react": "~17.0.21",
     "@types/react-native": "~0.64.12",
     "@types/styled-components-react-native": "^5.1.3",
