@@ -1,20 +1,17 @@
 import { StatusBar } from "expo-status-bar";
-import React from "react";
-import { ScrollView, Text, TouchableOpacity } from "react-native";
+import React, { useCallback } from "react";
+import { Text } from "react-native";
 
-import { Card } from "@root/atomic/molecules";
-import type { UserProps } from "@root/modules/User";
+import { CardList } from "@root/atomic/organisms";
 
 import { useUsers } from "../../hooks";
 import { mockedAvatarUrl } from "../../utils";
 import { Container } from "./styles";
 
-export const UserList = ({ navigation }: UserProps) => {
-  function handlePress() {
-    navigation.navigate("Home");
-  }
-
+export const UserList = () => {
   const { users, isLoading } = useUsers();
+
+  const removeUser = useCallback(() => {}, []);
 
   if (isLoading) {
     return (
@@ -26,13 +23,16 @@ export const UserList = ({ navigation }: UserProps) => {
 
   return (
     <Container>
-      <ScrollView>
-        {users?.map(({ name, id }) => (
-          <TouchableOpacity key={id} onPress={handlePress}>
-            <Card image={{ uri: mockedAvatarUrl(name) }} title={name} />
-          </TouchableOpacity>
-        ))}
-      </ScrollView>
+      <CardList
+        data={
+          users?.map(({ name, id }) => ({
+            title: name,
+            image: { uri: mockedAvatarUrl(name) },
+            id,
+          })) ?? []
+        }
+        callback={removeUser}
+      />
       <StatusBar style="auto" />
     </Container>
   );
