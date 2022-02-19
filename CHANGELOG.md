@@ -1,5 +1,40 @@
 # Changelog
 
+<a name="0.4.0"></a>
+## 0.4.0 (2022-02-19)
+
+Improvements:
+
+- Improve API query hooks
+- Jest for component testing
+  - with @testing-library/react-native
+- Test Coverage Badges
+
+
+### Added
+
+- ✅ use @testing-library/react-native [[7121800](https://github.com/thlmenezes/grocery-price-watch/commit/7121800bddc354da68091e6c40993fb06b361ec0)]
+- ➕ @testing-library/{jest-native,react-native} [[1a98655](https://github.com/thlmenezes/grocery-price-watch/commit/1a986552fb8c6269450981a325d84d2b15dadd31)]
+- ✅ App [[da4957d](https://github.com/thlmenezes/grocery-price-watch/commit/da4957db913bc2bcdba81c6d7b1af8c40c15b88d)]
+- ➕ jest [[9b1685c](https://github.com/thlmenezes/grocery-price-watch/commit/9b1685ccf3d9a8821b38f31da8325119792c6e10)]
+- ✨ removeUser impl removing from cache [[93469e4](https://github.com/thlmenezes/grocery-price-watch/commit/93469e4037cc4aee0d256298f3906f86f06d5ddc)]
+- ✨ ♻️ improve useUsers [[8e88112](https://github.com/thlmenezes/grocery-price-watch/commit/8e881120d634ae45de0bb5b1ffce01ed872eba91)]
+- ✨ useDefaultQuery [[77ba5b3](https://github.com/thlmenezes/grocery-price-watch/commit/77ba5b30f822b80ccad40e8eee906a9601b4555c)]
+- ✨ ♻️ add queryClient as root util [[ec28c4d](https://github.com/thlmenezes/grocery-price-watch/commit/ec28c4d3dd4cccb0856799e8bf218deadde042cb)]
+
+### Changed
+
+- 🔧 additional test matchers [[776bce4](https://github.com/thlmenezes/grocery-price-watch/commit/776bce4a47a12b3dc7d1fd93367123e13c241f4c)]
+- 🔧 jest [[24dae84](https://github.com/thlmenezes/grocery-price-watch/commit/24dae84237bcc6aebc3489342e7b6faf583da0f6)]
+- 🔧 tsconfig for tests [[06c8248](https://github.com/thlmenezes/grocery-price-watch/commit/06c8248461567313fb634e38dc7c9a9698d696b7)]
+
+### Miscellaneous
+
+- 📝 add test badges [[3a9f540](https://github.com/thlmenezes/grocery-price-watch/commit/3a9f54029a7c2d806d7dd8293089ac62b42a8160)]
+- 🙈 coverage [[fa6c997](https://github.com/thlmenezes/grocery-price-watch/commit/fa6c997ee5dfa8a1f5fe4096f5e273736cfd50bc)]
+- 📝 💡 add FIXME [[1b221c3](https://github.com/thlmenezes/grocery-price-watch/commit/1b221c3a8bea4efe86d090dc56ea5b7b29603578)]
+
+
 <a name="0.3.0"></a>
 ## 0.3.0 (2022-02-19)
 
