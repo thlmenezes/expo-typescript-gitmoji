@@ -4,6 +4,8 @@
 
 ## [Changelog](./CHANGELOG.md)
 
+To create a new release follow this [workflow](https://docs.gitmoji-changelog.dev/#/?id=workflow)
+
 ## Troubleshooting
 
 - If `yarn changelog` shows the following error:
