@@ -1,5 +1,15 @@
 # Changelog
 
+<a name="0.4.1"></a>
+## 0.4.1 (2022-02-19)
+
+Added files to enable version managers to install nodejs
+
+### Changed
+
+- 📌 node version [[356594e](https://github.com/thlmenezes/grocery-price-watch/commit/356594e8897e1a1688d7576bb6a6984c8d08316a)]
+
+
 <a name="0.4.0"></a>
 ## 0.4.0 (2022-02-19)
 
