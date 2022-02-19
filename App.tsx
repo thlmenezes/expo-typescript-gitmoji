@@ -1,19 +1,18 @@
 import { NavigationContainer } from "@react-navigation/native";
 import * as React from "react";
 import { useColorScheme } from "react-native";
-import { QueryClient, QueryClientProvider } from "react-query";
+import { QueryClientProvider } from "react-query";
 import { ThemeProvider } from "styled-components/native";
 
 import { themeSelector } from "@root/global";
 import { Routes } from "@root/routes";
-
-const client = new QueryClient();
+import { queryClient } from "@root/utils";
 
 export default function App() {
   const colorScheme = useColorScheme();
 
   return (
-    <QueryClientProvider client={client}>
+    <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={themeSelector[colorScheme ?? "dark"]}>
         <NavigationContainer>
           <Routes />
