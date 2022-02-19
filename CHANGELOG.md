@@ -1,5 +1,15 @@
 # Changelog
 
+<a name="0.4.3"></a>
+## 0.4.3 (2022-02-19)
+
+Update link hooks to stick to file header on navigate
+
+### Miscellaneous
+
+- 📝 update link hooks [[15c1310](https://github.com/thlmenezes/grocery-price-watch/commit/15c13106ab86e17552182b95026efbbb7332ca17)]
+
+
 <a name="0.4.2"></a>
 ## 0.4.2 (2022-02-19)
 
