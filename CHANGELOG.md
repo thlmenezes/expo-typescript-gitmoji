@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="0.4.4"></a>
+## 0.4.4 (2022-02-19)
+
+### Miscellaneous
+
+- 📝 hide badges links [[2388ca4](https://github.com/thlmenezes/grocery-price-watch/commit/2388ca454c4282162d7e681ad97810dbd2174fd8)]
+
+
 <a name="0.4.3"></a>
 ## 0.4.3 (2022-02-19)
 
