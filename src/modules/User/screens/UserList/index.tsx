@@ -11,6 +11,8 @@ import { Container } from "./styles";
 export const UserList = () => {
   const { users, isLoading, setCache } = useUsers();
 
+  // FIXME: removing user locks position on screen
+  // only way to delete all, is to delete bottom to top
   const removeUser = useCallback((targetId) => {
     setCache((old) => old?.filter(({ id }) => id !== targetId) ?? []);
   }, []);
