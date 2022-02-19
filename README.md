@@ -14,6 +14,6 @@
 
 ## Contents
 
-- [Changelog](./CHANGELOG.md)
-- [Contributing](./doc/CONTRIBUTING.md)
-- [Troubleshooting](./doc/TROUBLESHOOTING.md)
+- [Changelog](./CHANGELOG.md#changelog)
+- [Contributing](./doc/CONTRIBUTING.md#contributing)
+- [Troubleshooting](./doc/TROUBLESHOOTING.md#troubleshooting)
