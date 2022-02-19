@@ -2,6 +2,8 @@
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
+## [Changelog](./CHANGELOG.md)
+
 ## Troubleshooting
 
 - If `yarn changelog` shows the following error:
