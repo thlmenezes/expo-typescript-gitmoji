@@ -1,7 +1,11 @@
 # Changelog
 
-<a name="next"></a>
-## next
+<a name="0.3.0"></a>
+## 0.3.0 (2022-02-19)
+
+Improved:
+ - functionality with React Query and Reanimated
+ - documentation with Storybook and Gitmoji changelog generation
 
 ### Added
 
@@ -46,6 +50,11 @@
 
 ### Miscellaneous
 
+- 📝 add release tagging workflow [[5934f81](https://github.com/thlmenezes/grocery-price-watch/commit/5934f812650468f51defd35af7bdc86e74120b66)]
+- 📝 add CHANGELOG section [[7b6717e](https://github.com/thlmenezes/grocery-price-watch/commit/7b6717ee5ae6dd2380cbe926a688a85487f90237)]
+- 📝 CHANGELOG [[5face56](https://github.com/thlmenezes/grocery-price-watch/commit/5face565bb535d85d42f20f332e7842a4d1b62e9)]
+- 📝 add TROUBLESHOOTING section [[215e102](https://github.com/thlmenezes/grocery-price-watch/commit/215e102b9898e73d77e97f180dbc88721d626666)]
+- 🔨 gitmoji-changelog [[4b6a402](https://github.com/thlmenezes/grocery-price-watch/commit/4b6a4020b4ea1a04a00360d564d4de915c80a69a)]
 - 📝 add storybook start instructions [[8b26b79](https://github.com/thlmenezes/grocery-price-watch/commit/8b26b796bc9525a39a147d2bf2d0872d6d41e520)]
 - 📦 js-&gt;ts stories [[c2ea333](https://github.com/thlmenezes/grocery-price-watch/commit/c2ea333de1602761d3df466c16a7eb1ce298a8ad)]
 - 🔨 lint [[d66e84c](https://github.com/thlmenezes/grocery-price-watch/commit/d66e84cae69eccffb235cf6a3c96df918bc3c668)]
@@ -53,6 +62,15 @@
 
 <a name="0.2.0"></a>
 ## 0.2.0 (2022-02-16)
+
+Design new file structure, services, styling and babel fix...again
+- modular file structure for screens,routes,utils,services
+- atomic file structure for designing
+- change almost every folder to a module, including assets
+  - babel module resolving expects it
+- add axios for API calls
+- add styled-components
+- create themes
 
 ### Added
 
@@ -82,6 +100,8 @@
 <a name="0.1.1"></a>
 ## 0.1.1 (2022-02-15)
 
+Fixes Babel Module Resolving
+
 ### Fixed
 
 - 🐛 babel-plugin-module-resolver not resolving [[588fe8e](https://github.com/thlmenezes/grocery-price-watch/commit/588fe8e1e9d6ee97e23161e8f2ea44d9541a75de)]
@@ -89,6 +109,19 @@
 
 <a name="0.1.0"></a>
 ## 0.1.0 (2022-02-15)
+
+Added a Typescript Expo Project with the following tools configured:
+- [Eslint](https://eslint.org/)
+  - [babel-plugin-module-resolver](https://www.npmjs.com/package/babel-plugin-module-resolver)
+  - [import-helpers/order-imports
+](https://github.com/Tibfib/eslint-plugin-import-helpers#readme)
+  - [Prettier](https://prettier.io/)
+- [LintStaged](https://www.npmjs.com/package/lint-staged)
+- [Husky](https://typicode.github.io/husky/#/)
+- [Commitlint](https://commitlint.js.org/#/)
+  - [commitlint-config-gitmoji](https://www.npmjs.com/package/commitlint-config-gitmoji)
+- [Commitzen](https://commitizen-tools.github.io/commitizen/)
+  - [cz-gitmoji](https://github.com/Landish/cz-gitmoji)
 
 ### Added
 
