@@ -1,5 +1,15 @@
 # Changelog
 
+<a name="0.4.2"></a>
+## 0.4.2 (2022-02-19)
+
+Update README, document tech stack and write contributing guidelines
+
+### Miscellaneous
+
+- 📝 write better docs on app stack [[b114ccc](https://github.com/thlmenezes/grocery-price-watch/commit/b114ccc4886b3d788f6d757912a24409bab46c1a)]
+
+
 <a name="0.4.1"></a>
 ## 0.4.1 (2022-02-19)
 
