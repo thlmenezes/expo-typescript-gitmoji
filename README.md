@@ -2,6 +2,12 @@
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
+## Test Coverage
+![](./__badges__/badge-branches.svg)
+![](./__badges__/badge-functions.svg)
+![](./__badges__/badge-lines.svg)
+![](./__badges__/badge-statements.svg)
+
 ## [Changelog](./CHANGELOG.md)
 
 To create a new release follow this [workflow](https://docs.gitmoji-changelog.dev/#/?id=workflow)
