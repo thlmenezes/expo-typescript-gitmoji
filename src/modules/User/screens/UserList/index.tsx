@@ -9,9 +9,11 @@ import { mockedAvatarUrl } from "../../utils";
 import { Container } from "./styles";
 
 export const UserList = () => {
-  const { users, isLoading } = useUsers();
+  const { users, isLoading, setCache } = useUsers();
 
-  const removeUser = useCallback(() => {}, []);
+  const removeUser = useCallback((targetId) => {
+    setCache((old) => old?.filter(({ id }) => id !== targetId) ?? []);
+  }, []);
 
   if (isLoading) {
     return (
