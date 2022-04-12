@@ -4,6 +4,7 @@ import type { GlobalStackProps } from "@root/global";
 
 export declare type MainStackProps = {
   Home: undefined;
+  Todo: undefined;
 };
 
 export type HomeProps = NativeStackScreenProps<GlobalStackProps, "Home">;

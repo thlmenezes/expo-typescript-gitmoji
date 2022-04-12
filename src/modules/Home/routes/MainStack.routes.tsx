@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 
-import { Home } from "../screens/Home";
+import { Home, Todo } from "../screens";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -13,6 +13,7 @@ export const MainStack = () => {
       }}
     >
       <Screen name="HomePage" component={Home} />
+      <Screen options={{ headerShown: true }} name="Todo" component={Todo} />
     </Navigator>
   );
 };
