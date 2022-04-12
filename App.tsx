@@ -7,6 +7,7 @@ import { ThemeProvider } from "styled-components/native";
 import { themeSelector } from "@root/global";
 import { Routes } from "@root/routes";
 import { queryClient } from "@root/utils";
+import "./i18n.config";
 
 export default function App() {
   const colorScheme = useColorScheme();
